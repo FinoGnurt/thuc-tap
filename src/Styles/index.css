@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 13px;
+}
+
+input {
+  background-color: white;
+  outline: none;
+  border: 1px solid #dddddd;
+}
