@@ -1,0 +1,246 @@
+{
+  "baoNghi": [],
+  "monHoc": [
+    {
+      "id": "MH001",
+      "tenMon": "Lập trình Web",
+      "lop": "CNTT-K22A",
+      "soTietDuKien": 4,
+      "cacTuan": [
+        {
+          "tuan": 1,
+          "batDau": "26/01/26",
+          "ketThuc": "31/01/26",
+          "duKien": 4,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 2,
+          "batDau": "02/02/26",
+          "ketThuc": "07/02/26",
+          "duKien": 4,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 3,
+          "batDau": "09/02/26",
+          "ketThuc": "14/02/26",
+          "duKien": 0,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 4,
+          "batDau": "16/02/26",
+          "ketThuc": "21/02/26",
+          "duKien": 0,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 5,
+          "batDau": "23/02/26",
+          "ketThuc": "28/02/26",
+          "duKien": 4,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 6,
+          "batDau": "02/03/26",
+          "ketThuc": "07/03/26",
+          "duKien": 4,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 7,
+          "batDau": "09/03/26",
+          "ketThuc": "14/03/26",
+          "duKien": 4,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 8,
+          "batDau": "16/03/26",
+          "ketThuc": "21/03/26",
+          "duKien": 4,
+          "daDay": null,
+          "trangThai": null
+        },
+        {
+          "tuan": 9,
+          "batDau": "23/03/26",
+          "ketThuc": "28/03/26",
+          "duKien": 4,
+          "daDay": null,
+          "trangThai": null
+        },
+        {
+          "tuan": 10,
+          "batDau": "30/03/26",
+          "ketThuc": "04/04/26",
+          "duKien": 4,
+          "daDay": null,
+          "trangThai": null
+        },
+        {
+          "tuan": 11,
+          "batDau": "06/04/26",
+          "ketThuc": "11/04/26",
+          "duKien": 4,
+          "daDay": null,
+          "trangThai": null
+        },
+        {
+          "tuan": 12,
+          "batDau": "13/04/26",
+          "ketThuc": "18/04/26",
+          "duKien": 4,
+          "daDay": null,
+          "trangThai": null
+        },
+        {
+          "tuan": 13,
+          "batDau": "20/04/26",
+          "ketThuc": "25/04/26",
+          "duKien": 4,
+          "daDay": null,
+          "trangThai": null
+        },
+        {
+          "tuan": 14,
+          "batDau": "27/04/26",
+          "ketThuc": "02/05/26",
+          "duKien": 4,
+          "daDay": null,
+          "trangThai": null
+        }
+      ]
+    },
+    {
+      "id": "MH002",
+      "tenMon": "Cơ sở dữ liệu",
+      "lop": "CNTT-K22B",
+      "soTietDuKien": 4,
+      "cacTuan": [
+        {
+          "tuan": 1,
+          "batDau": "15/12/25",
+          "ketThuc": "20/12/25",
+          "duKien": 4,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 2,
+          "batDau": "22/12/25",
+          "ketThuc": "27/12/25",
+          "duKien": 4,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 3,
+          "batDau": "29/12/25",
+          "ketThuc": "03/01/26",
+          "duKien": 4,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 4,
+          "batDau": "05/01/26",
+          "ketThuc": "10/01/26",
+          "duKien": 4,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 5,
+          "batDau": "12/01/26",
+          "ketThuc": "17/01/26",
+          "duKien": 4,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 6,
+          "batDau": "19/01/26",
+          "ketThuc": "24/01/26",
+          "duKien": 4,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 7,
+          "batDau": "26/01/26",
+          "ketThuc": "31/01/26",
+          "duKien": 4,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 8,
+          "batDau": "02/02/26",
+          "ketThuc": "07/02/26",
+          "duKien": 4,
+          "daDay": 8,
+          "trangThai": null
+        },
+        {
+          "tuan": 9,
+          "batDau": "09/02/26",
+          "ketThuc": "14/02/26",
+          "duKien": 4,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 10,
+          "batDau": "16/02/26",
+          "ketThuc": "21/02/26",
+          "duKien": 4,
+          "daDay": 0,
+          "trangThai": null
+        },
+        {
+          "tuan": 11,
+          "batDau": "23/02/26",
+          "ketThuc": "28/02/26",
+          "duKien": 5,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 12,
+          "batDau": "02/03/26",
+          "ketThuc": "07/03/26",
+          "duKien": 0,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 13,
+          "batDau": "09/03/26",
+          "ketThuc": "14/03/26",
+          "duKien": 0,
+          "daDay": 4,
+          "trangThai": null
+        },
+        {
+          "tuan": 14,
+          "batDau": "16/03/26",
+          "ketThuc": "21/03/26",
+          "duKien": 0,
+          "daDay": 0,
+          "trangThai": null
+        }
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
