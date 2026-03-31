@@ -5,7 +5,7 @@ import { UserContext } from "@/contexts/UserContext";
 import { useLoading } from "@/hooks/useLoading";
 import { resetBaoNghi } from "@/services/baoNghiService";
 import { resetMonHoc } from "@/services/monHocService";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router";
 
 const baseNavItems = [
@@ -14,6 +14,140 @@ const baseNavItems = [
   { label: "LỊCH THI", to: "/LichThi" },
 ];
 
+// ─── Icon Settings (SVG inline) ───────────────────────────────────────────────
+function IconSettings({ spinning }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={`w-4 h-4 transition-transform duration-500 ease-in-out ${
+        spinning ? "rotate-90" : "rotate-0"
+      }`}
+    >
+      <path
+        fillRule="evenodd"
+        d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 0 0-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 0 0-2.282.819l-.922 1.597a1.875 1.875 0 0 0 .432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 0 0 0 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 0 0-.432 2.385l.922 1.597a1.875 1.875 0 0 0 2.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 0 0 2.28-.819l.923-1.597a1.875 1.875 0 0 0-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 0 0 0-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 0 0-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 0 0-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 0 0-1.85-1.567h-1.843ZM12 15.75a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
+
+// ─── Settings Dropdown ────────────────────────────────────────────────────────
+function SettingsDropdown({ onResetDB, onClearStorage }) {
+  const [open, setOpen] = useState(false);
+  const [spinning, setSpinning] = useState(false);
+  const wrapRef = useRef(null);
+
+  // Click ngoài → đóng
+  useEffect(() => {
+    if (!open) return;
+    const handle = (e) => {
+      if (wrapRef.current && !wrapRef.current.contains(e.target)) {
+        setOpen(false);
+        setSpinning(false);
+      }
+    };
+    document.addEventListener("mousedown", handle);
+    document.addEventListener("touchstart", handle);
+    return () => {
+      document.removeEventListener("mousedown", handle);
+      document.removeEventListener("touchstart", handle);
+    };
+  }, [open]);
+
+  const handleToggle = () => {
+    const next = !open;
+    setOpen(next);
+    setSpinning(next);
+  };
+
+  return (
+    <div ref={wrapRef} className="relative">
+      {/* Icon button */}
+      <button
+        onClick={handleToggle}
+        title="Cài đặt"
+        className="flex items-center justify-center w-6 h-6 rounded text-[#0B1D6B] hover:text-[#1E5CD1] cursor-pointer transition-colors"
+      >
+        <IconSettings spinning={spinning} />
+      </button>
+
+      {/* Dropdown */}
+      <div
+        className={`
+          absolute top-full left-0 mt-1.5 z-[9999]
+          bg-white border border-[#ccc] rounded shadow-lg
+          min-w-[170px] overflow-hidden
+          transition-all duration-200 ease-out origin-top-left
+          ${open ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"}
+        `}
+      >
+        {/* Tiêu đề */}
+        <div className="px-3 py-1.5 text-[10px] font-bold text-[#888] uppercase tracking-wider border-b border-[#eee] bg-[#f7f7f7]">
+          Cài đặt hệ thống
+        </div>
+
+        {/* Reset DB */}
+        <button
+          onClick={() => {
+            setOpen(false);
+            setSpinning(false);
+            onResetDB();
+          }}
+          className="w-full flex items-center gap-2 px-3 py-2 text-[12px] text-[#333] hover:bg-[#fff3f3] hover:text-red-600 cursor-pointer transition-colors text-left"
+        >
+          {/* Icon reload */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-3.5 h-3.5 shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+          Reset DB
+        </button>
+
+        {/* Clear Local Storage */}
+        <button
+          onClick={() => {
+            setOpen(false);
+            setSpinning(false);
+            onClearStorage();
+          }}
+          className="w-full flex items-center gap-2 px-3 py-2 text-[12px] text-[#333] hover:bg-[#fff3f3] hover:text-red-600 cursor-pointer transition-colors text-left border-t border-[#f0f0f0]"
+        >
+          {/* Icon trash */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-3.5 h-3.5 shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+            />
+          </svg>
+          Clear Local Storage
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ─── Navbar ───────────────────────────────────────────────────────────────────
 export default function Navbar() {
   const { user } = useContext(UserContext);
   const userName = user?.name;
@@ -31,13 +165,11 @@ export default function Navbar() {
     navItems.splice(1, 0, { label: "XEM KẾ HOẠCH", to: "/XemKeHoach" });
     navItems.splice(2, 0, { label: "DUYỆT BÁO NGHỈ", to: "/DuyetBaoNghi" });
   } else {
-    // Chưa đăng nhập
     navItems.splice(1, 0, { label: "XEM KẾ HOẠCH", to: "/XemKeHoach" });
   }
 
   const handleLogout = () => {
     localStorage.removeItem("userLogin");
-    // localStorage.removeItem("mailExample");
     navigate(0);
   };
 
@@ -49,11 +181,16 @@ export default function Navbar() {
     navigate(0);
   };
 
+  const handleClearStorage = () => {
+    localStorage.clear();
+    navigate(0);
+  };
+
   return (
     <div className="flex flex-col">
       {/* Thanh đăng nhập */}
       <div className="flex justify-between items-center px-3 py-1 text-[12px] h-[31px] bg-linear-to-b from-[#A9C4E5] to-[#698FC8] via-[#698FC8] via-90% relative rounded-t-[10px] mt-0.25">
-        <div className="flex gap-3">
+        <div className="flex gap-3 items-center">
           {/* Hamburger button - chỉ hiện trên mobile */}
           <button
             className="sm:hidden flex flex-col gap-1 p-1 cursor-pointer"
@@ -71,12 +208,11 @@ export default function Navbar() {
             />
           </button>
 
-          <button
-            className="hover:underline cursor-pointer active:underline"
-            onClick={handleResetDB}
-          >
-            Reset DB
-          </button>
+          {/* Icon setting thay thế 2 button cũ */}
+          <SettingsDropdown
+            onResetDB={handleResetDB}
+            onClearStorage={handleClearStorage}
+          />
         </div>
 
         {/* Khu vực đăng nhập / đăng xuất */}

@@ -1,40 +1,101 @@
 import tableIcon from "@/assets/images/ghichu_48.png";
+import { useEffect, useRef, useState } from "react";
 
 /**
- * Icon clipboard.
- * - Luôn hiển thị icon khi được render (caller quyết định khi nào render).
- * - Nếu có `text` → hiện tooltip hover phía TRÊN icon.
- * - Tooltip dùng `bottom-full` thay `left-full` để không bị cắt bởi overflow-x-auto của bảng.
+ * Icon clipboard với tooltip thông minh:
+ * - Desktop (có chuột / hover):  hover để xem nội dung ghi chú.
+ * - Mobile/touch (hover: none):  tap để toggle tooltip, tap ngoài để đóng.
+ *
+ * Phát hiện thiết bị qua media query `(hover: none)` — chính xác hơn
+ * user-agent sniffing và cập nhật tự động khi thay đổi input device.
  *
  * Props:
- *   text  - nội dung ghi chú (optional). Nếu rỗng thì chỉ hiện icon, không có tooltip.
+ *   text  - nội dung ghi chú. Nếu rỗng chỉ hiện icon, không có tooltip.
  */
 export default function TooltipGhiChu({ text = "" }) {
   const hasText = !!text;
 
+  // true khi thiết bị không hỗ trợ hover (touchscreen)
+  const [isTouch, setIsTouch] = useState(false);
+  // Chỉ dùng cho touch: trạng thái mở/đóng tooltip
+  const [open, setOpen] = useState(false);
+
+  const wrapRef = useRef(null);
+
+  // ── Phát hiện thiết bị ────────────────────────────────────────────────────
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: none)");
+    setIsTouch(mq.matches);
+    const onChange = (e) => {
+      setIsTouch(e.matches);
+      setOpen(false); // reset khi chuyển device
+    };
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  // ── Touch: click ngoài → đóng ─────────────────────────────────────────────
+  useEffect(() => {
+    if (!isTouch || !open) return;
+    const handle = (e) => {
+      if (wrapRef.current && !wrapRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("touchstart", handle);
+    document.addEventListener("mousedown", handle);
+    return () => {
+      document.removeEventListener("touchstart", handle);
+      document.removeEventListener("mousedown", handle);
+    };
+  }, [isTouch, open]);
+
+  const handleTap = (e) => {
+    if (!isTouch || !hasText) return;
+    e.stopPropagation();
+    setOpen((v) => !v);
+  };
+
   return (
     <div
+      ref={wrapRef}
+      onClick={handleTap}
       className={`relative inline-flex items-center justify-center ${
-        hasText ? "group cursor-pointer" : "cursor-default"
+        !hasText
+          ? "cursor-default"
+          : isTouch
+            ? "cursor-pointer"
+            : "group cursor-pointer"
       }`}
     >
-      <img src={tableIcon} alt="ghi chú" className="w-5 h-5 object-contain" />
+      <img
+        src={tableIcon}
+        alt="ghi chú"
+        className="w-5 h-5 object-contain select-none"
+      />
 
       {/* Tooltip — chỉ render khi có text */}
       {hasText && (
         <div
-          className="
+          className={`
             absolute bottom-full left-1/2 -translate-x-1/2 mb-2
             w-max max-w-[160px]
             px-2.5 py-1.5
             bg-gray-800 text-white text-[11px] leading-relaxed
             rounded shadow-lg
             whitespace-pre-wrap break-words
-            opacity-0 scale-95 pointer-events-none
             transition-all duration-200 ease-out
-            group-hover:opacity-100 group-hover:scale-100
             z-[100]
-          "
+            ${
+              isTouch
+                ? // Touch: kiểm soát bằng state
+                  open
+                  ? "opacity-100 scale-100 pointer-events-auto"
+                  : "opacity-0 scale-95 pointer-events-none"
+                : // Desktop: CSS group-hover thuần
+                  "opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100"
+            }
+          `}
         >
           {text}
 
