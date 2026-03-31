@@ -41,7 +41,10 @@ export default function ApproveLeavePage() {
       let email = "";
 
       while (true) {
-        email = prompt("Nhập email để gửi phòng đào tạo (email thật):");
+        email = prompt(
+          "Nhập email để gửi phòng đào tạo (có thể dùng email thật):",
+          "example@gmail.com",
+        );
 
         // user bấm cancel
         if (email === null) {
