@@ -43,6 +43,7 @@ export async function duyetBaoNghi(donId, data, ghiChuTK = "") {
             if (tuan.tuan === donBaoNghi.tuan) {
               return {
                 ...tuan,
+                ghiChu: donBaoNghi.ghiChuGV,
                 daDay: 0,
                 trangThai: "da_duyet",
               };

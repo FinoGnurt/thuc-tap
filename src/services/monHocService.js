@@ -41,13 +41,10 @@ export async function getDanhSachMonHoc() {
 export async function resetMonHoc() {
   const { data } = await api.get("/monHoc");
   const { monHoc } = defaultDB;
-  for (const don of data) {
-    for (const mon of monHoc) {
-      if (mon.id === don.id) {
-        await api.put(`/monHoc/${don.id}`, mon);
-      }
-    }
-  }
+  await api.put(`/monHoc/${data[0].id}`, {
+    ...data[0],
+    data: monHoc[0].data,
+  });
 }
 
 export async function updateNote(idMonHoc, tuan = "", text) {

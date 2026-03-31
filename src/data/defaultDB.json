@@ -2,245 +2,1076 @@
   "baoNghi": [],
   "monHoc": [
     {
-      "id": "MH001",
-      "tenMon": "Lập trình Web",
-      "lop": "CNTT-K22A",
-      "soTietDuKien": 4,
-      "cacTuan": [
+      "id": "1",
+      "success": true,
+      "total": 7,
+      "tongSoTiet": 555,
+      "daDayTong": 461,
+      "chuaDayTong": 94,
+      "data": [
         {
-          "tuan": 1,
-          "batDau": "26/01/26",
-          "ketThuc": "31/01/26",
-          "duKien": 4,
-          "daDay": 4,
-          "trangThai": null
+          "id": 1,
+          "monHoc": "Biên tập video với Adobe Premiere cơ bản",
+          "loaiGiangVien": "Thỉnh giảng",
+          "tenGiangVien": "Phạm Thế Trí",
+          "lop": "T24TKĐH2",
+          "buoi": "Tối",
+          "hocKy": 2,
+          "namHoc": "2025 - 2026",
+          "soTiet": 75,
+          "lyThuyet": 0,
+          "thucHanh": 75,
+          "soTietMoiTuan": 4,
+          "daDay": 24,
+          "tongDuKienDenNay": 32,
+          "chuaDay": 51,
+          "trangThai": "Đang dạy",
+          "batDau": "26-01-2026",
+          "ketThuc": null,
+          "ketThucDuKien": "23-05-2026",
+          "baoNghi": null,
+          "cacTuan": [
+            {
+              "tuan": 1,
+              "batDau": "26/01/26",
+              "ketThuc": "31/01/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 2,
+              "batDau": "02/02/26",
+              "ketThuc": "07/02/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 3,
+              "batDau": "09/02/26",
+              "ketThuc": "14/02/26",
+              "duKien": 0,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "nghi_le"
+            },
+            {
+              "tuan": 4,
+              "batDau": "16/02/26",
+              "ketThuc": "21/02/26",
+              "duKien": 0,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "nghi_le"
+            },
+            {
+              "tuan": 5,
+              "batDau": "23/02/26",
+              "ketThuc": "28/02/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 6,
+              "batDau": "02/03/26",
+              "ketThuc": "07/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 7,
+              "batDau": "09/03/26",
+              "ketThuc": "14/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 8,
+              "batDau": "16/03/26",
+              "ketThuc": "21/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 9,
+              "batDau": "23/03/26",
+              "ketThuc": "28/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 10,
+              "batDau": "30/03/26",
+              "ketThuc": "04/04/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hien_tai"
+            },
+            {
+              "tuan": 11,
+              "batDau": "06/04/26",
+              "ketThuc": "11/04/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 12,
+              "batDau": "13/04/26",
+              "ketThuc": "18/04/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 13,
+              "batDau": "20/04/26",
+              "ketThuc": "25/04/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 14,
+              "batDau": "27/04/26",
+              "ketThuc": "02/05/26",
+              "duKien": 8,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 15,
+              "batDau": "04/05/26",
+              "ketThuc": "09/05/26",
+              "duKien": 8,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 16,
+              "batDau": "11/05/26",
+              "ketThuc": "16/05/26",
+              "duKien": 8,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 17,
+              "batDau": "18/05/26",
+              "ketThuc": "23/05/26",
+              "duKien": 7,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            }
+          ]
         },
         {
-          "tuan": 2,
-          "batDau": "02/02/26",
-          "ketThuc": "07/02/26",
-          "duKien": 4,
-          "daDay": 4,
-          "trangThai": null
+          "id": 2,
+          "monHoc": "Biên tập video với Adobe Premiere cơ bản",
+          "loaiGiangVien": "Thỉnh giảng",
+          "tenGiangVien": "Phạm Thế Trí",
+          "lop": "T24TKĐH1",
+          "buoi": "Tối",
+          "hocKy": 2,
+          "namHoc": "2025 - 2026",
+          "soTiet": 75,
+          "lyThuyet": 0,
+          "thucHanh": 75,
+          "soTietMoiTuan": 4,
+          "daDay": 24,
+          "tongDuKienDenNay": 32,
+          "chuaDay": 51,
+          "trangThai": "Đang dạy",
+          "batDau": "26-01-2026",
+          "ketThuc": null,
+          "ketThucDuKien": "23-05-2026",
+          "baoNghi": null,
+          "cacTuan": [
+            {
+              "tuan": 1,
+              "batDau": "26/01/26",
+              "ketThuc": "31/01/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 2,
+              "batDau": "02/02/26",
+              "ketThuc": "07/02/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 3,
+              "batDau": "09/02/26",
+              "ketThuc": "14/02/26",
+              "duKien": 0,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "nghi_le"
+            },
+            {
+              "tuan": 4,
+              "batDau": "16/02/26",
+              "ketThuc": "21/02/26",
+              "duKien": 0,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "nghi_le"
+            },
+            {
+              "tuan": 5,
+              "batDau": "23/02/26",
+              "ketThuc": "28/02/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 6,
+              "batDau": "02/03/26",
+              "ketThuc": "07/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 7,
+              "batDau": "09/03/26",
+              "ketThuc": "14/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 8,
+              "batDau": "16/03/26",
+              "ketThuc": "21/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 9,
+              "batDau": "23/03/26",
+              "ketThuc": "28/03/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 10,
+              "batDau": "30/03/26",
+              "ketThuc": "04/04/26",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hien_tai"
+            },
+            {
+              "tuan": 11,
+              "batDau": "06/04/26",
+              "ketThuc": "11/04/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 12,
+              "batDau": "13/04/26",
+              "ketThuc": "18/04/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 13,
+              "batDau": "20/04/26",
+              "ketThuc": "25/04/26",
+              "duKien": 4,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 14,
+              "batDau": "27/04/26",
+              "ketThuc": "02/05/26",
+              "duKien": 8,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 15,
+              "batDau": "04/05/26",
+              "ketThuc": "09/05/26",
+              "duKien": 8,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 16,
+              "batDau": "11/05/26",
+              "ketThuc": "16/05/26",
+              "duKien": 8,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            },
+            {
+              "tuan": 17,
+              "batDau": "18/05/26",
+              "ketThuc": "23/05/26",
+              "duKien": 7,
+              "daDay": null,
+              "ghiChu": "",
+              "trangThai": "chua_day"
+            }
+          ]
         },
         {
-          "tuan": 3,
-          "batDau": "09/02/26",
-          "ketThuc": "14/02/26",
-          "duKien": 0,
-          "daDay": 0,
-          "trangThai": null
+          "id": 3,
+          "monHoc": "Biên tập video với Adobe Premiere",
+          "loaiGiangVien": "Thỉnh giảng",
+          "tenGiangVien": "Phạm Thế Trí",
+          "lop": "C24TKĐH1",
+          "buoi": "Tối",
+          "hocKy": 1,
+          "namHoc": "2025 - 2026",
+          "soTiet": 75,
+          "lyThuyet": 25,
+          "thucHanh": 50,
+          "soTietMoiTuan": 11,
+          "daDay": 76,
+          "tongDuKienDenNay": 75,
+          "chuaDay": 0,
+          "trangThai": "Đã kết thúc",
+          "batDau": "01-12-2025",
+          "ketThuc": "26-01-2026",
+          "ketThucDuKien": "22-12-2025",
+          "baoNghi": {
+            "idBaoNghi": "BN1773900000001",
+            "tuan": 7,
+            "tuanInfo": "12/01/26 đến 17/01/26",
+            "lyDo": "Nghỉ lễ",
+            "ghiChuGV": "",
+            "ghiChuTK": "",
+            "trangThaiBaoNghi": "da_duyet",
+            "ngayGui": "10/01/2026",
+            "emailDaGui": true
+          },
+          "cacTuan": [
+            {
+              "tuan": 1,
+              "batDau": "01/12/25",
+              "ketThuc": "06/12/25",
+              "duKien": 11,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 2,
+              "batDau": "08/12/25",
+              "ketThuc": "13/12/25",
+              "duKien": 16,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 3,
+              "batDau": "15/12/25",
+              "ketThuc": "20/12/25",
+              "duKien": 16,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 4,
+              "batDau": "22/12/25",
+              "ketThuc": "27/12/25",
+              "duKien": 16,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 5,
+              "batDau": "29/12/25",
+              "ketThuc": "03/01/26",
+              "duKien": 16,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 6,
+              "batDau": "05/01/26",
+              "ketThuc": "10/01/26",
+              "duKien": 0,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 7,
+              "batDau": "12/01/26",
+              "ketThuc": "17/01/26",
+              "duKien": 0,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "da_duyet"
+            },
+            {
+              "tuan": 8,
+              "batDau": "19/01/26",
+              "ketThuc": "24/01/26",
+              "duKien": 0,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            }
+          ]
         },
         {
-          "tuan": 4,
-          "batDau": "16/02/26",
-          "ketThuc": "21/02/26",
-          "duKien": 0,
-          "daDay": 0,
-          "trangThai": null
+          "id": 4,
+          "monHoc": "Kỹ thuật quay phim, chụp ảnh",
+          "loaiGiangVien": "Thỉnh giảng",
+          "tenGiangVien": "Phạm Thế Trí",
+          "lop": "C24TKĐH1",
+          "buoi": "Tối",
+          "hocKy": 2,
+          "namHoc": "2024 - 2025",
+          "soTiet": 60,
+          "lyThuyet": 30,
+          "thucHanh": 30,
+          "soTietMoiTuan": 8,
+          "daDay": 60,
+          "tongDuKienDenNay": 60,
+          "chuaDay": 0,
+          "trangThai": "Đã kết thúc",
+          "batDau": "24-03-2025",
+          "ketThuc": "11-09-2025",
+          "ketThucDuKien": "19-05-2025",
+          "baoNghi": {
+            "idBaoNghi": "BN1773900000002",
+            "tuan": 2,
+            "tuanInfo": "31/03/25 đến 05/04/25",
+            "lyDo": "Công tác",
+            "ghiChuGV": "",
+            "ghiChuTK": "",
+            "trangThaiBaoNghi": "da_duyet",
+            "ngayGui": "28/03/2025",
+            "emailDaGui": true
+          },
+          "cacTuan": [
+            {
+              "tuan": 1,
+              "batDau": "24/03/25",
+              "ketThuc": "29/03/25",
+              "duKien": 8,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 2,
+              "batDau": "31/03/25",
+              "ketThuc": "05/04/25",
+              "duKien": 8,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "da_duyet"
+            },
+            {
+              "tuan": 3,
+              "batDau": "07/04/25",
+              "ketThuc": "12/04/25",
+              "duKien": 8,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 4,
+              "batDau": "14/04/25",
+              "ketThuc": "19/04/25",
+              "duKien": 8,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 5,
+              "batDau": "21/04/25",
+              "ketThuc": "26/04/25",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 6,
+              "batDau": "28/04/25",
+              "ketThuc": "03/05/25",
+              "duKien": 0,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "nghi_le"
+            },
+            {
+              "tuan": 7,
+              "batDau": "05/05/25",
+              "ketThuc": "10/05/25",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 8,
+              "batDau": "12/05/25",
+              "ketThuc": "17/05/25",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 9,
+              "batDau": "19/05/25",
+              "ketThuc": "24/05/25",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 10,
+              "batDau": "26/05/25",
+              "ketThuc": "31/05/25",
+              "duKien": 8,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 11,
+              "batDau": "02/06/25",
+              "ketThuc": "07/06/25",
+              "duKien": 0,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 12,
+              "batDau": "09/06/25",
+              "ketThuc": "14/06/25",
+              "duKien": 0,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 13,
+              "batDau": "16/06/25",
+              "ketThuc": "21/06/25",
+              "duKien": 0,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            }
+          ]
         },
         {
-          "tuan": 5,
-          "batDau": "23/02/26",
-          "ketThuc": "28/02/26",
-          "duKien": 4,
-          "daDay": 4,
-          "trangThai": null
+          "id": 5,
+          "monHoc": "Xử lý ảnh với Photoshop",
+          "loaiGiangVien": "Thỉnh giảng",
+          "tenGiangVien": "Phạm Thế Trí",
+          "lop": "T24TKĐH3",
+          "buoi": "Sáng",
+          "hocKy": 1,
+          "namHoc": "2024 - 2025",
+          "soTiet": 75,
+          "lyThuyet": 15,
+          "thucHanh": 60,
+          "soTietMoiTuan": 4,
+          "daDay": 80,
+          "tongDuKienDenNay": 75,
+          "chuaDay": 0,
+          "trangThai": "Đã kết thúc",
+          "batDau": "28-10-2024",
+          "ketThuc": "23-01-2025",
+          "ketThucDuKien": "13-01-2025",
+          "baoNghi": null,
+          "cacTuan": [
+            {
+              "tuan": 1,
+              "batDau": "28/10/24",
+              "ketThuc": "02/11/24",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 2,
+              "batDau": "04/11/24",
+              "ketThuc": "09/11/24",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 3,
+              "batDau": "11/11/24",
+              "ketThuc": "16/11/24",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 4,
+              "batDau": "18/11/24",
+              "ketThuc": "23/11/24",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 5,
+              "batDau": "25/11/24",
+              "ketThuc": "30/11/24",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 6,
+              "batDau": "02/12/24",
+              "ketThuc": "07/12/24",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 7,
+              "batDau": "09/12/24",
+              "ketThuc": "14/12/24",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 8,
+              "batDau": "16/12/24",
+              "ketThuc": "21/12/24",
+              "duKien": 4,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 9,
+              "batDau": "23/12/24",
+              "ketThuc": "28/12/24",
+              "duKien": 4,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 10,
+              "batDau": "30/12/24",
+              "ketThuc": "04/01/25",
+              "duKien": 4,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 11,
+              "batDau": "06/01/25",
+              "ketThuc": "11/01/25",
+              "duKien": 4,
+              "daDay": 20,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 12,
+              "batDau": "13/01/25",
+              "ketThuc": "18/01/25",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 13,
+              "batDau": "20/01/25",
+              "ketThuc": "25/01/25",
+              "duKien": 4,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "vang"
+            },
+            {
+              "tuan": 14,
+              "batDau": "27/01/25",
+              "ketThuc": "01/02/25",
+              "duKien": 4,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "vang"
+            },
+            {
+              "tuan": 15,
+              "batDau": "03/02/25",
+              "ketThuc": "08/02/25",
+              "duKien": 4,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "vang"
+            },
+            {
+              "tuan": 16,
+              "batDau": "10/02/25",
+              "ketThuc": "15/02/25",
+              "duKien": 15,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "vang"
+            }
+          ]
         },
         {
-          "tuan": 6,
-          "batDau": "02/03/26",
-          "ketThuc": "07/03/26",
-          "duKien": 4,
-          "daDay": 4,
-          "trangThai": null
+          "id": 6,
+          "monHoc": "Xử lý ảnh với Photoshop",
+          "loaiGiangVien": "Thỉnh giảng",
+          "tenGiangVien": "Phạm Thế Trí",
+          "lop": "T24TKĐH1",
+          "buoi": "Sáng",
+          "hocKy": 1,
+          "namHoc": "2024 - 2025",
+          "soTiet": 75,
+          "lyThuyet": 15,
+          "thucHanh": 60,
+          "soTietMoiTuan": 4,
+          "daDay": 75,
+          "tongDuKienDenNay": 75,
+          "chuaDay": 0,
+          "trangThai": "Đã kết thúc",
+          "batDau": "16-12-2024",
+          "ketThuc": "09-05-2025",
+          "ketThucDuKien": "13-01-2025",
+          "baoNghi": null,
+          "cacTuan": [
+            {
+              "tuan": 1,
+              "batDau": "16/12/24",
+              "ketThuc": "21/12/24",
+              "duKien": 4,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 2,
+              "batDau": "23/12/24",
+              "ketThuc": "28/12/24",
+              "duKien": 4,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 3,
+              "batDau": "30/12/24",
+              "ketThuc": "04/01/25",
+              "duKien": 4,
+              "daDay": 16,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 4,
+              "batDau": "06/01/25",
+              "ketThuc": "11/01/25",
+              "duKien": 4,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 5,
+              "batDau": "13/01/25",
+              "ketThuc": "18/01/25",
+              "duKien": 4,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 6,
+              "batDau": "20/01/25",
+              "ketThuc": "25/01/25",
+              "duKien": 55,
+              "daDay": 12,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 7,
+              "batDau": "27/01/25",
+              "ketThuc": "01/02/25",
+              "duKien": 0,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "nghi_le"
+            },
+            {
+              "tuan": 8,
+              "batDau": "03/02/25",
+              "ketThuc": "08/02/25",
+              "duKien": 0,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "nghi_le"
+            },
+            {
+              "tuan": 9,
+              "batDau": "10/02/25",
+              "ketThuc": "15/02/25",
+              "duKien": 0,
+              "daDay": 11,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            },
+            {
+              "tuan": 10,
+              "batDau": "17/02/25",
+              "ketThuc": "22/02/25",
+              "duKien": 0,
+              "daDay": 0,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            }
+          ]
         },
         {
-          "tuan": 7,
-          "batDau": "09/03/26",
-          "ketThuc": "14/03/26",
-          "duKien": 4,
-          "daDay": 4,
-          "trangThai": null
-        },
-        {
-          "tuan": 8,
-          "batDau": "16/03/26",
-          "ketThuc": "21/03/26",
-          "duKien": 4,
-          "daDay": null,
-          "trangThai": null
-        },
-        {
-          "tuan": 9,
-          "batDau": "23/03/26",
-          "ketThuc": "28/03/26",
-          "duKien": 4,
-          "daDay": null,
-          "trangThai": null
-        },
-        {
-          "tuan": 10,
-          "batDau": "30/03/26",
-          "ketThuc": "04/04/26",
-          "duKien": 4,
-          "daDay": null,
-          "trangThai": null
-        },
-        {
-          "tuan": 11,
-          "batDau": "06/04/26",
-          "ketThuc": "11/04/26",
-          "duKien": 4,
-          "daDay": null,
-          "trangThai": null
-        },
-        {
-          "tuan": 12,
-          "batDau": "13/04/26",
-          "ketThuc": "18/04/26",
-          "duKien": 4,
-          "daDay": null,
-          "trangThai": null
-        },
-        {
-          "tuan": 13,
-          "batDau": "20/04/26",
-          "ketThuc": "25/04/26",
-          "duKien": 4,
-          "daDay": null,
-          "trangThai": null
-        },
-        {
-          "tuan": 14,
-          "batDau": "27/04/26",
-          "ketThuc": "02/05/26",
-          "duKien": 4,
-          "daDay": null,
-          "trangThai": null
-        }
-      ]
-    },
-    {
-      "id": "MH002",
-      "tenMon": "Cơ sở dữ liệu",
-      "lop": "CNTT-K22B",
-      "soTietDuKien": 4,
-      "cacTuan": [
-        {
-          "tuan": 1,
-          "batDau": "15/12/25",
-          "ketThuc": "20/12/25",
-          "duKien": 4,
-          "daDay": 0,
-          "trangThai": null
-        },
-        {
-          "tuan": 2,
-          "batDau": "22/12/25",
-          "ketThuc": "27/12/25",
-          "duKien": 4,
-          "daDay": 4,
-          "trangThai": null
-        },
-        {
-          "tuan": 3,
-          "batDau": "29/12/25",
-          "ketThuc": "03/01/26",
-          "duKien": 4,
-          "daDay": 0,
-          "trangThai": null
-        },
-        {
-          "tuan": 4,
-          "batDau": "05/01/26",
-          "ketThuc": "10/01/26",
-          "duKien": 4,
-          "daDay": 0,
-          "trangThai": null
-        },
-        {
-          "tuan": 5,
-          "batDau": "12/01/26",
-          "ketThuc": "17/01/26",
-          "duKien": 4,
-          "daDay": 4,
-          "trangThai": null
-        },
-        {
-          "tuan": 6,
-          "batDau": "19/01/26",
-          "ketThuc": "24/01/26",
-          "duKien": 4,
-          "daDay": 0,
-          "trangThai": null
-        },
-        {
-          "tuan": 7,
-          "batDau": "26/01/26",
-          "ketThuc": "31/01/26",
-          "duKien": 4,
-          "daDay": 0,
-          "trangThai": null
-        },
-        {
-          "tuan": 8,
-          "batDau": "02/02/26",
-          "ketThuc": "07/02/26",
-          "duKien": 4,
-          "daDay": 8,
-          "trangThai": null
-        },
-        {
-          "tuan": 9,
-          "batDau": "09/02/26",
-          "ketThuc": "14/02/26",
-          "duKien": 4,
-          "daDay": 0,
-          "trangThai": null
-        },
-        {
-          "tuan": 10,
-          "batDau": "16/02/26",
-          "ketThuc": "21/02/26",
-          "duKien": 4,
-          "daDay": 0,
-          "trangThai": null
-        },
-        {
-          "tuan": 11,
-          "batDau": "23/02/26",
-          "ketThuc": "28/02/26",
-          "duKien": 5,
-          "daDay": 4,
-          "trangThai": null
-        },
-        {
-          "tuan": 12,
-          "batDau": "02/03/26",
-          "ketThuc": "07/03/26",
-          "duKien": 0,
-          "daDay": 4,
-          "trangThai": null
-        },
-        {
-          "tuan": 13,
-          "batDau": "09/03/26",
-          "ketThuc": "14/03/26",
-          "duKien": 0,
-          "daDay": 4,
-          "trangThai": null
-        },
-        {
-          "tuan": 14,
-          "batDau": "16/03/26",
-          "ketThuc": "21/03/26",
-          "duKien": 0,
-          "daDay": 0,
-          "trangThai": null
+          "id": 7,
+          "monHoc": "Thiết kế & xây dựng video quảng cáo",
+          "loaiGiangVien": "Thỉnh giảng",
+          "tenGiangVien": "Phạm Thế Trí",
+          "lop": "C22TKĐH1",
+          "buoi": "Sáng",
+          "hocKy": 1,
+          "namHoc": "2024 - 2025",
+          "soTiet": 120,
+          "lyThuyet": 30,
+          "thucHanh": 90,
+          "soTietMoiTuan": 8,
+          "daDay": 122,
+          "tongDuKienDenNay": 120,
+          "chuaDay": 0,
+          "trangThai": "Đã kết thúc",
+          "batDau": "26-08-2024",
+          "ketThuc": "12-12-2024",
+          "ketThucDuKien": "09-12-2024",
+          "baoNghi": {
+            "idBaoNghi": "BN1773900000003",
+            "tuan": 10,
+            "tuanInfo": "28/10/24 đến 02/11/24",
+            "lyDo": "Công tác",
+            "ghiChuGV": "",
+            "ghiChuTK": "",
+            "trangThaiBaoNghi": "da_duyet",
+            "ngayGui": "25/10/2024",
+            "emailDaGui": true
+          },
+          "cacTuan": [
+            {
+              "tuan": 1,
+              "batDau": "26/08/24",
+              "ketThuc": "31/08/24",
+              "duKien": 10,
+              "daDay": 10,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 2,
+              "batDau": "02/09/24",
+              "ketThuc": "07/09/24",
+              "duKien": 10,
+              "daDay": 10,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 3,
+              "batDau": "09/09/24",
+              "ketThuc": "14/09/24",
+              "duKien": 10,
+              "daDay": 10,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 4,
+              "batDau": "16/09/24",
+              "ketThuc": "21/09/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 5,
+              "batDau": "23/09/24",
+              "ketThuc": "28/09/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 6,
+              "batDau": "30/09/24",
+              "ketThuc": "05/10/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 7,
+              "batDau": "07/10/24",
+              "ketThuc": "12/10/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 8,
+              "batDau": "14/10/24",
+              "ketThuc": "19/10/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 9,
+              "batDau": "21/10/24",
+              "ketThuc": "26/10/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 10,
+              "batDau": "28/10/24",
+              "ketThuc": "02/11/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "da_duyet"
+            },
+            {
+              "tuan": 11,
+              "batDau": "04/11/24",
+              "ketThuc": "09/11/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 12,
+              "batDau": "11/11/24",
+              "ketThuc": "16/11/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 13,
+              "batDau": "18/11/24",
+              "ketThuc": "23/11/24",
+              "duKien": 8,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 14,
+              "batDau": "25/11/24",
+              "ketThuc": "30/11/24",
+              "duKien": 8,
+              "daDay": 4,
+              "ghiChu": "",
+              "trangThai": "hoan_thanh"
+            },
+            {
+              "tuan": 15,
+              "batDau": "02/12/24",
+              "ketThuc": "07/12/24",
+              "duKien": 2,
+              "daDay": 8,
+              "ghiChu": "",
+              "trangThai": "bu_gio"
+            }
+          ]
         }
       ]
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
