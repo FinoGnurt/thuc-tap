@@ -217,7 +217,6 @@ export default function TeachingPlanListPage() {
             </tr>
           ) : (
             danhSachHienThi.map((mon, idx) => {
-              console.log(mon);
               return (
                 <tr
                   key={mon.id}

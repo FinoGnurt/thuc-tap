@@ -75,7 +75,8 @@ export default function TuanTable({
           {/* Ghi chú */}
           <tr>
             <td className="border border-gray-400 bg-white px-2 py-1.5 font-semibold text-center">
-              Ghi chú
+              {/* Ghi chú */}
+              Chi tiết
             </td>
             {nhom.map((t) => {
               const isDaDuyet = t.trangThai === "da_duyet";

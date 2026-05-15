@@ -270,42 +270,47 @@ export default function LeaveReportPage() {
                   </td>
                 </tr>
               ) : (
-                dsBaoNghiCuaGV.map((d, i) => (
-                  <tr
-                    key={d.id}
-                    className={i % 2 === 0 ? "bg-white" : "bg-[#f5f5e8]"}
-                  >
-                    <td className="px-2 py-1 border border-gray-300 text-center">
-                      {i + 1}
-                    </td>
-                    <td className="px-2 py-1 border border-gray-300">
-                      {d.tenMon}
-                    </td>
-                    <td className="px-2 py-1 border border-gray-300 text-center">
-                      {d.lop}
-                    </td>
-                    <td className="px-2 py-1 border border-gray-300 text-center">
-                      Tuần {d.tuan}
-                    </td>
-                    <td className="px-2 py-1 border border-gray-300 text-center text-[11px]">
-                      {d.tuanInfo}
-                    </td>
-                    <td className="px-2 py-1 border border-gray-300">
-                      {d.lyDo}
-                    </td>
-                    <td className="px-2 py-1 border border-gray-300 text-center">
-                      {d.ngayGui}
-                    </td>
-                    <td className="px-2 py-1 border border-gray-300 text-center">
-                      {trangThaiLabel(d.trangThai)}
-                      {d.ghiChuTK && (
-                        <p className="text-[11px] text-gray-500 mt-0.5 italic">
-                          ({d.ghiChuTK})
-                        </p>
-                      )}
-                    </td>
-                  </tr>
-                ))
+                dsBaoNghiCuaGV.map((d, i) => {
+                  return (
+                    <tr
+                      key={d.id}
+                      className={i % 2 === 0 ? "bg-white" : "bg-[#f5f5e8]"}
+                    >
+                      <td className="px-2 py-1 border border-gray-300 text-center">
+                        {i + 1}
+                      </td>
+                      <td className="px-2 py-1 border border-gray-300">
+                        {
+                          dsMonHoc.find((m) => m.id === Number(d.idMonHoc))
+                            ?.monHoc
+                        }
+                      </td>
+                      <td className="px-2 py-1 border border-gray-300 text-center">
+                        {d.lop}
+                      </td>
+                      <td className="px-2 py-1 border border-gray-300 text-center">
+                        Tuần {d.tuan}
+                      </td>
+                      <td className="px-2 py-1 border border-gray-300 text-center text-[11px]">
+                        {d.tuanInfo}
+                      </td>
+                      <td className="px-2 py-1 border border-gray-300">
+                        {d.lyDo}
+                      </td>
+                      <td className="px-2 py-1 border border-gray-300 text-center">
+                        {d.ngayGui}
+                      </td>
+                      <td className="px-2 py-1 border border-gray-300 text-center">
+                        {trangThaiLabel(d.trangThai)}
+                        {d.ghiChuTK && (
+                          <p className="text-[11px] text-gray-500 mt-0.5 italic">
+                            ({d.ghiChuTK})
+                          </p>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })
               )}
             </tbody>
           </table>

@@ -32,6 +32,8 @@ export default function ApproveLeavePage() {
   const hasPrompted = useRef(false);
   const [monHoc, setMonHoc] = useState([]);
 
+  console.log(monHoc);
+
   useEffect(() => {
     // Nhập mail fake
     const inputMailFake = () => {
@@ -91,17 +93,21 @@ export default function ApproveLeavePage() {
     showLoading();
     const res = await duyetBaoNghi(donId, donBaoNghi, ghiChuTK[donId] || "");
     console.log(res);
-    if (res) {
+    const data = {
+      ...res,
+      tenMon: monHoc.find((mh) => mh.id === Number(res.idMonHoc))?.monHoc,
+    };
+    if (data) {
       await danhDauDaGuiEmail(donId);
-      const emailInfo = taoNoiDungEmail(res, sendMailExample);
+      const emailInfo = taoNoiDungEmail(data, sendMailExample);
       setEmailPopup({ ...emailInfo, emailDaGui: true });
       setPopupMode("sent");
-      sendEmail(res, sendMailExample);
+      sendEmail(data, sendMailExample);
       setThongBao({
         loai: "success",
-        noi: `Đã duyệt đơn của ${res.tenGV} và gửi thông báo đến phòng đào tạo.`,
+        noi: `Đã duyệt đơn của ${data.tenGV} và gửi thông báo đến phòng đào tạo.`,
       });
-      setDsBaoNghi(dsBaoNghi.map((d) => (d.id === donId ? res : d)));
+      setDsBaoNghi(dsBaoNghi.map((d) => (d.id === donId ? data : d)));
     }
     hideLoading();
   };
@@ -376,7 +382,13 @@ export default function ApproveLeavePage() {
                   </td>
                 </tr>
               ) : (
-                daXuLy.map((d, i) => {
+                daXuLy.map((donXuLy, i) => {
+                  const d = {
+                    ...donXuLy,
+                    tenMon: monHoc.find(
+                      (m) => m.id === Number(donXuLy.idMonHoc),
+                    )?.monHoc,
+                  };
                   return (
                     <tr
                       key={d.id}
